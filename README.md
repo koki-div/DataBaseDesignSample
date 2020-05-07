@@ -5,7 +5,7 @@
 |name|string|add_index, null: false, unique: true|
 ### Association
 - has_many :groups, through: :user_groups
-- has_many :messages
+- has_many :messages, through: :user_groups
 
 ## messagesテーブル
 |Column|Type|Options|
