@@ -2,7 +2,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|username|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 ### Association
 - has_many :groups, through: :user_groups
 - has_many :messages
