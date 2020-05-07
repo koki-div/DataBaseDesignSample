@@ -4,7 +4,7 @@
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
 ### Association
-- has_many :groups, through: :user_groups
+- has_many :groups, through: :users_groups
 - has_many :messages
 
 ## messagesテーブル
@@ -23,10 +23,10 @@
 |------|----|-------|
 |name|string|null: false, unique: true|
 ### Association
-- has_many :users, through: :user_groups
+- has_many :users, through: :users_groups
 - has_many :messages
 
-## user_groupテーブル
+## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|references|foreign_key: true|
