@@ -24,7 +24,7 @@
 |name|string|null: false, unique: true|
 ### Association
 - has_many :users, through: :user_groups
-- has_many :messages
+- has_many :messages, through: :user_groups
 
 ## user_groupテーブル
 |Column|Type|Options|
