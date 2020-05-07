@@ -29,8 +29,8 @@
 ## user_groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false|
-|group_id|references|null: false|
+|user|references|null: false|
+|group|references|null: false|
 ### Association
 - belongs_to :user
 - belongs_to :group
